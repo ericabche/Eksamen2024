@@ -6,144 +6,214 @@
     <link rel="stylesheet" href="ikoner/css/solid.css">
     <link rel="stylesheet" href="ikoner/css/fontawesome.css">
     <link rel="stylesheet" href="ikoner/css/brands.css">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Nettbutikk</title>
 </head>
-<body>
-    <header>
-        <a href="index.html"><h1>Nettbutikk</h1></a>
+
+<body id="grid-container">
+    <header id="global-header">
+        <form>
+            <label for="search">søk her</label>
+            <input type="search" placeholder="søk her" id="search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+
         <nav>
-            <ul>
+            <ul class="menypunktene">
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="product.html">Produkter</a></li>
-                <li><a href="#">Kategorier</a></li>
-                <li><a href="#">Kontakt oss</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="#produkter">Produkter</a></li>
+                <li><a href="index.html" class="logo">Logo</a></li>
+                <li><a href="#kategorier">Kategorier</a></li>
+                <li><a href="#kontakt">Kontakt oss</a></li>
+            </ul>
+
+            <ul class="ikonene">
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- Bannerseksjon -->
-        <section>
+        <section id="banner">
+            <img src="img/banner.jpg" alt="Banner-bilde">
             <h2>Et harum quidem rerum facilis est et expedita distinctio.</h2>
             <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus</p>
             <a href="#lesmer">Les mer</a>
-            <img src="https://picsum.photos/200/300" alt="Bannerseksjon">
         </section>
 
-        <!-- Produkter -->
-        <section>
+        <section id="produkter">
             <h2>Våre mest populære produkter</h2>
-            <p>Oppgdag det beste av det beste</p>
+            <p>Oppdag det beste av det beste</p>
+        
+        <div class="btn-container"> 
+            <button class="btn-produkter"><i>Nyheter</i></button>
+            <button class="btn-produkter"><i>Tilbud</i></button>
+            <button class="btn-produkter"><i>Bestselgere</i></button>
+        </div>
 
                 <article>
-                    <img src="https://picsum.photos/200" alt="Produktbilde">
-                    <h3>Product name</h3>
-                    <p>kr 1999</p>
+                    <img src="img/produkt.webp" alt="Produktbilde">
+                    <h3><a href="product.html">Product name</a></h3>
+                    <p>kr 1299</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>642 Reviews</p>
                 </article>
 
                 <article>
-                    <img src="https://picsum.photos/200" alt="Produktbilde">
-                    <h3>Product name</h3>
-                    <p>kr 1999</p>
+                    <img src="img/produkt.webp" alt="Produktbilde">
+                    <h3><a href="product.html">Product name</a></h3>
+                    <p>kr 1299</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>642 Reviews</p>
                 </article>
 
                 <article>
-                    <img src="https://picsum.photos/200" alt="Produktbilde">
-                    <h3>Product name</h3>
-                    <p>kr 1999</p>
+                    <img src="img/produkt.webp" alt="Produktbilde">
+                    <h3><a href="product.html">Product name</a></h3>
+                    <p>kr 1299</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>642 Reviews</p>
                 </article>
 
                 <article>
-                    <img src="https://picsum.photos/200" alt="Produktbilde">
-                    <h3>Product name</h3>
-                    <p>kr 1999</p>
+                    <img src="img/produkt.webp" alt="Produktbilde">
+                    <h3><a href="product.html">Product name</a></h3>
+                    <p>kr 1299</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>642 Reviews</p>
                 </article>
 
                 <article>
-                    <img src="https://picsum.photos/200" alt="Produktbilde">
-                    <h3>Product name</h3>
-                    <p>kr 1999</p>
+                    <img src="img/produkt.webp" alt="Produktbilde">
+                    <h3><a href="product.html">Product name</a></h3>
+                    <p>kr 1299</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>642 Reviews</p>
                 </article>
 
                 <article>
-                    <img src="https://picsum.photos/200" alt="Produktbilde">
-                    <h3>Product name</h3>
-                    <p>kr 1999</p>
+                    <img src="img/produkt.webp" alt="Produktbilde">
+                    <h3><a href="product.html">Product name</a></h3>
+                    <p>kr 1299</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <p>642 Reviews</p>
                 </article>
+
           
         </section>
 
-        <!-- Kategorier -->
-        <section>
+        <section id="kategorier">
             <h2>Våre mest populære kategorier</h2>
             <p>Oppdag det beste av det beste</p>
             
                 <article>
                     Category 1
-                    <img src="https://picsum.photos/200" alt="Kategoribilde">
+                    <img src="img/produktkategori1.webp" alt="Kategoribilde">
                 </article>
 
                 <article>
                     Category 2
-                    <img src="https://picsum.photos/200" alt="Kategoribilde">
+                    <img src="img/produktkategori2.jpg" alt="Kategoribilde">
                 </article>
 
                 <article>
                     Category 3
-                    <img src="https://picsum.photos/200" alt="Kategoribilde">
+                    <img src="img/Produktkategori3.jpg" alt="Kategoribilde">
                 </article>
 
                 <article>
                     Category 4
-                    <img src="https://picsum.photos/200" alt="Kategoribilde">
+                    <img src="img/produktkategori4.jpg" alt="Kategoribilde">
                 </article>
 
                 <article>
                     Category 5
-                    <img src="https://picsum.photos/200" alt="Kategoribilde">
+                    <img src="img/produktkategori5.jpeg" alt="Kategoribilde">
                 </article>
         </section>
 
-        <!-- Anmeldelser -->
         <section>
             <h2>Anmeldelser</h2>
             <article>
                 <img src="https://picsum.photos/id/237/200/300" alt="Brukerbilde">
                 <h3>Ola Nordmann</h3>
                 <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
             </article>
 
             <article>
                 <img src="https://picsum.photos/id/237/200/300" alt="Brukerbilde">
                 <h3>Ola Nordmann</h3>
                 <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
             </article>
 
             <article>
                 <img src="https://picsum.photos/id/237/200/300" alt="Brukerbilde">
                 <h3>Ola Nordmann</h3>
                 <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
             </article>
 
             <article>
                 <img src="https://picsum.photos/id/237/200/300" alt="Brukerbilde">
                 <h3>Ola Nordmann</h3>
                 <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
             </article>
            
         </section>
     </main>
 
     <footer>
-        <!-- Logo og ingress -->
         <section>
             <h3><img src="logo.png" alt="Logo"></h3>
             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
         </section>
 
-        <!-- Kontakt -->
+
         <section id="kontakt">
             <h2>Kontakt oss</h2>
             <p>
@@ -155,7 +225,7 @@
             </p>
         </section>
 
-        <!-- Snarveier -->
+
         <section>
             <h3>Snarveier</h3>
             <ul>
@@ -166,7 +236,7 @@
             </ul>
         </section>
 
-        <!-- Sosiale medier -->
+
         <section>
             <h3>Sosiale medier</h3>
             <ul>
