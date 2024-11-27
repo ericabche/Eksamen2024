@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ikoner/css/solid.css">
+    <link rel="stylesheet" href="ikoner/css/regular.css">
     <link rel="stylesheet" href="ikoner/css/fontawesome.css">
     <link rel="stylesheet" href="ikoner/css/brands.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Nettbutikk</title>
+    <title>Nettbutikk | Checkout</title>
 </head>
 
 <body id="grid-container">
@@ -35,51 +36,180 @@
         </nav>
     </header>
 
+    <nav class="breadcrumb-checkout">
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-arrow-left"></i>Fortsett å handle</a></li>
+        </ul>
+    </nav>
 
+<main class="main.checkout">
 
+<h1>Kasse</h1>
 
+<section class="handlekurv">
+    <h2>1. Handlekurven din</h2>
+    <article class="handlekurv-produkt">
+        <img src="img/produkt.webp" alt="Produktbilde">
+        <h3>Product name</h3>
+        <p>Pris: 1299 kr</p>
+        <p>Farge: Sterling sølv</p>
+    </article>
 
+    <article class="handlekurv-produkt">
+        <img src="img/produkt.webp" alt="Produktbilde">
+        <h3>Product name</h3>
+        <p>Pris: 1299 kr</p>
+        <p>Farge: Sterling sølv</p>
+    </article>
 
-    <footer>
-        <section>
-            <h3><img src="logo.png" alt="Logo"></h3>
-            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
-        </section>
+    <article class="handlekurv-produkt">
+        <img src="img/produkt.webp" alt="Produktbilde">
+        <h3>Product name</h3>
+        <p>Pris: 1299 kr</p>
+        <p>Farge: Sterling sølv</p>
+    </article>
+</section>
 
+<section class="kontaktinfo">
+    <h2>2. Dine opplysninger</h2>
+    <form>
+        <h3>Leveringsadresse</h3>
+        <p>Fornavn</p>
+        <label for="navn"></label>
+        <input id="navn" name="navn" placeholder="Fornavn*" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
 
-        <section id="kontakt">
-            <h2>Kontakt oss</h2>
-            <p>
-                Adresse: B R A Veien 4, 1757 Halden
-                Telefon: 69 60 80 00
-                E-post: halden@hiof.no
-                Åpningstider: Stenger 15:00
-                
-            </p>
-        </section>
+        <p>Etternavn</p>
+        <label for="etternavn"></label>
+        <input id="etternavn" name="etternavn" placeholder="Etternavn*" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
 
+        <p>Gateadresse</p>
+        <label for="adresse"></label>  
+        <input id="adresse" name="adresse" placeholder="Gateadresse*" required> 
 
-        <section>
-            <h3>Snarveier</h3>
+        <p>Postnummer</p>
+        <label for="postnummer"></label>
+        <input id="postnummer" name="postnummer" placeholder="Postnummer*" maxlength="4" pattern="[0-9]{4}" required>
+
+        <p>Poststed</p>
+        <label for="poststed"></label>
+        <input id="poststed" name="poststed" placeholder="Poststed*" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+    </form>
+
+    <form>
+        <h3>Kontaktinformasjon</h3>
+        <p>E-post</p>
+        <label for="epost"></label>
+        <input id="epost" name="epost" type="email" placeholder="E-post*" required>
+
+        <p>Telefon</p>
+        <label for="telefon"></label>
+        <input id="telefon" name="telefon" type="tel" placeholder="Telefonnummer*" pattern="[0-9]{8,12}" required>
+
+        <input type="submit" value="Lagre"> 
+        <a href="index.html">Avbryt</a>
+    </form>
+</section>
+
+<section class="levering">
+    <h2>3. Levering</h2>
+    <h3>Leveringsvalg</h3>
+    <form>
+        <label class="levering-valg">
+            <input type="radio" name="levering" value="hjemlevering" required> 
+            <span>Express hjemlevering</span>
+        </label>
+        <p>3-4 Virkedager</p>
+            <p>Bestill hverdag før 08:00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag. 
+            *For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for postnummer 8000-9999 er leveringstiden 3 arbeidsdager.</p>
+
+        <label class="levering-valg">
+            <input type="radio" name="levering" value="utleveringsted" required>
+            <span>Express Pakke til utleveringssted</span>
+        </label>
+        <p>1-3 Virkedager</p>
+
+        <label class="levering-valg">
+            <input type="radio" name="levering" value="standard" required>
+            <span>Standard Hjemlevering</span>
+        </label>
+        <p>5-8 Virkedager</p>
+        <p>Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.</p>
+    </form>
+</section>
+
+<section class="betaling">
+    <h2>4. Betaling</h2>
+    
+    <h3>Betal med kort</h3>
+    <form action="betaling">
+        <label for="kortnummer">Kortnummer</label>
+        <input id="kortnummer" name="kortnummer" type="text" placeholder="4925 5600 **** ****" pattern="[0-9]{16}" required>
+
+        <label for="utlopsdato">Utløpsdato</label>
+        <input id="utlopsdato" name="utlopsdato" type="date" required>
+
+        <label for="cvc">CVC/CVV</label>
+        <input id="cvc" name="cvc" type="text" placeholder="CVC/CVV" required> 
+    </form>
+
+    <form class="fullfør-kjøp">
+        <p>Å betale ink. mva:,-</p>
+        <p>3 897 kr</p>
+        <input type="submit" value="Fullfør kjøp">
+    </form>
+
+    <form class="reklame">
+        <p class="samtykke">
+            Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.
+        </p>
+        
+        <label class="checkbokser">
+            <input type="checkbox" name="kjøpsvilkår" id="vilkår">
+            Jeg godtar kjøpsvilkårene
+        </label>
+
+        <label class="checkbokser">
+            <input type="checkbox" name="reklame" id="sms">
+            Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
+        </label>
+    </form>
+</section>
+
+</main>
+
+<footer class="footer">
+    <section class="footer-logo">
+        <h3>Logo</h3>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.</p>
+    </section>
+
+    <section class="footer-info">
+            <h4>Kontakt</h4>
+            <p><i class="fa-solid fa-location-dot"></i> Adresse: B R A Veien 4, 1757 Halden</p>
+            <p><i class="fa-solid fa-phone"></i> Telefon: 69 60 80 00</p>
+            <p><i class="fa-solid fa-envelope"></i> E-post: <a href="mailto:halden@hiof.no">halden@hiof.no</a></p>
+            <p><i class="fa-solid fa-clock"></i> Åpningstider: Stenger 15:00</p>
+    </section>
+
+    <section class="footer-sv">
+            <h4>Snarveier</h4>
             <ul>
-                <li><a href="index.html">Hjem</a></li>
                 <li><a href="product.html">Produkter</a></li>
                 <li><a href="#kategorier">Kategorier</a></li>
                 <li><a href="#kontakt">Kontakt oss</a></li>
             </ul>
-        </section>
+    </section>
 
+    <section class="footer-sm">
+        <h4>Sosiale Medier</h4>
+        <ul>
+            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a></li>
+        </ul>
+    </section>
+</footer>
 
-        <section>
-            <h3>Sosiale medier</h3>
-            <ul>
-                <li><a href="https://facebook.com">Facebook</a></li>
-                <li><a href="https://instagram.com">Instagram</a></li>
-                <li><a href="https://linkedin.com">LinkedIn</a></li>
-                <li><a href="https://pinterest.com">Pinterest</a></li>
-            </ul>
-        </section>
-    </footer>
-    
 </body>
 </html>
