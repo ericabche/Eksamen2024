@@ -979,31 +979,37 @@ h2 {
 
     /*------- Produkt -------*/
 
-    .handlekurv-produkt {
-        display: grid;
-        grid-template-columns: 1fr 2fr; /* Bildet tar 1 del, teksten 2 deler */
-        gap: 1rem; /* Avstand mellom bilde og tekst */
-        align-items: center; /* Sentrer elementene vertikalt */
-        padding: 1rem;
-    }
-
-    .handlekurv-produkt img {
-        grid-row: span 3; 
-        width: 100%;
-    }
-
-    .handlekurv-produkt h3 {
-        grid-column: 2; 
-        margin: 0;
-        padding-top: 5rem;
+    .product-hovedbilde {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 700px; 
     }
     
-    .handlekurv-produkt p {
-        grid-column: 2;
-        margin: 0.5rem 0;
-        font-size: 1rem;
-        align-self: start;
+    .product-hovedbilde img {
+        width: 100%; 
+        max-width: 490px; 
+        object-fit: contain; 
     }
+    
+    .mini-container {
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .product-mini-bilder img {
+        width: 160px; 
+    }
+    
+    .product-name {
+        margin-top: 1rem;
+        text-align: left;
+        grid-column: 2;
+    }
+
 
     /*------- Lignende Produkter -------*/
     .lignende-produkter {
