@@ -49,6 +49,7 @@
 
 <section class="handlekurv">
     <h2>1. Handlekurven din</h2>
+    
     <article class="handlekurv-produkt">
         <img src="img/produkt.webp" alt="Produktbilde">
 
@@ -56,6 +57,24 @@
             <p>Pris: 1299 kr</p>
             <p>Farge: Sterling sølv</p>
 
+            <fieldset class="handlekurv-size">
+                <label for="størrelse-1">Størrelse</label>
+                <select id="størrelse-1" name="størrelse">
+                    <option value="small">S</option>
+                    <option value="medium">M</option>
+                    <option value="large">L</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="antall-container">
+                <label for="antall-1">Antall</label>
+                <input type="number" id="antall-1" name="antall" value="1" min="1">
+            </fieldset>
+            
+            <form class="handlekurv-knapper">
+            <button class="fav"><i class="fa-regular fa-heart"></i></button>
+            <button class="trash"><i class="fa-solid fa-trash"></i></button>
+            </form>
     </article>
 
     <article class="handlekurv-produkt">
@@ -65,6 +84,24 @@
             <p>Pris: 1299 kr</p>
             <p>Farge: Sterling sølv</p>
 
+            <fieldset class="handlekurv-size">
+                <label for="størrelse-2">Størrelse</label>
+                <select id="størrelse-2" name="størrelse">
+                    <option value="small">S</option>
+                    <option value="medium">M</option>
+                    <option value="large">L</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="antall-container">
+                <label for="antall-2">Antall</label>
+                <input type="number" id="antall-2" name="antall" value="1" min="1">
+            </fieldset>
+
+            <form class="handlekurv-knapper">
+                <button class="fav"><i class="fa-regular fa-heart"></i></button>
+                <button class="trash"><i class="fa-solid fa-trash"></i></button>
+            </form>
     </article>
 
     <article class="handlekurv-produkt">
@@ -74,6 +111,24 @@
             <p>Pris: 1299 kr</p>
             <p>Farge: Sterling sølv</p>
 
+            <fieldset class="handlekurv-size">
+                <label for="størrelse-3">Størrelse</label>
+                <select id="størrelse-3" name="størrelse">
+                    <option value="small">S</option>
+                    <option value="medium">M</option>
+                    <option value="large">L</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="antall-container">
+                <label for="antall-3">Antall</label>
+                <input type="number" id="antall-3" name="antall" value="1" min="1">
+            </fieldset>
+
+            <form class="handlekurv-knapper">
+                <button class="fav"><i class="fa-regular fa-heart"></i></button>
+                <button class="trash"><i class="fa-solid fa-trash"></i></button>
+            </form>
     </article>
 </section>
 
@@ -121,6 +176,7 @@
                 <input type="radio" name="levering" value="hjemlevering" required>
                 <span>Express hjemlevering</span>
             </label>
+            <p class="pris">59 kr<i class="fa-solid fa-truck-fast"></i></p>
             <p>3-4 Virkedager</p>
             <p>
                 Bestill hverdag før 08:00* for levering neste arbeidsdag. Leveres hjem til deg før frokost mandag til lørdag.
@@ -133,6 +189,7 @@
                 <input type="radio" name="levering" value="utleveringsted" required>
                 <span>ExpressPakke til utleveringssted</span>
             </label>
+            <p class="pris">59 kr<i class="fa-solid fa-truck-fast"></i></p>
             <p>1-3 Virkedager</p>
         </fieldset>
 
@@ -141,6 +198,7 @@
                 <input type="radio" name="levering" value="standard" required>
                 <span>Standard Hjemlevering</span>
             </label>
+            <p class="pris">Gratis<i class="fa-solid fa-gift"></i></p>
             <p>5-8 Virkedager</p>
             <p>Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.</p>
         </fieldset>
@@ -150,7 +208,7 @@
 <section class="betaling">
     <h2>4. Betaling</h2>
     
-    <h3>Betal med kort</h3>
+    <h3>Betal med kort<i class="fa-solid fa-credit-card"></i></h3>
     <form action="betaling">
         <label for="kortnummer">Kortnummer</label>
         <input id="kortnummer" name="kortnummer" type="text" placeholder="4925 5600 **** ****" pattern="[0-9]{16}" required>
